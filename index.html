@@ -13,8 +13,9 @@
     <div class="add-item">
       <form id="todo-form">
         <input type="text" id="item-name" placeholder="Item Name" required>
-        <input type="date" id="item-date" placeholder="Deadline" required>
+        <input type="text" id="item-date" placeholder="Deadline" onfocus="(this.type='date')" required>
         <select id="priority" required>
+          <option value="" disabled selected>Priority</option>
           <option value="high">High</option>
           <option value="medium">Medium</option>
           <option value="low">Low</option>
